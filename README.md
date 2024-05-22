@@ -15,7 +15,7 @@ pip install pyautogui
 ```
 
 3. Download chromedriver
-Chromedriver: [Chromedriver]https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.76/win64/chromedriver-win64.zip
+Chromedriver: [Copy and paste to Chrome browser](https://storage.googleapis.com/chrome-for-testing-public/125.0.6422.76/win64/chromedriver-win64.zip)
 
 ##### Place the chromedriver.exe in the root folder
 ###### chromedriver.exe is already installed
