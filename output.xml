@@ -1,84 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-22T16:05:46.141008" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-22T17:38:26.045941" rpa="false" schemaversion="5">
 <suite id="s1" name="Test" source="c:\Users\ojt.it.zycus\Documents\robotFramework\tests\test.robot">
 <test id="s1-t1" name="Valid Login" line="8">
 <kw name="Open Browser To Login Page" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-22T16:05:46.993613" level="INFO">Opening browser 'Chrome' to base url 'https://dewdrops-staging.zycus.com/home/auth'.</msg>
+<msg time="2024-05-22T17:38:27.568411" level="INFO">Opening browser 'Chrome' to base url 'https://dewdrops-staging.zycus.com/home/auth'.</msg>
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-22T16:05:46.992845" elapsed="12.683286"/>
+<status status="PASS" start="2024-05-22T17:38:27.566918" elapsed="13.844512"/>
 </kw>
-<status status="PASS" start="2024-05-22T16:05:46.991848" elapsed="12.684283"/>
+<status status="PASS" start="2024-05-22T17:38:27.562812" elapsed="13.849551"/>
 </kw>
 <kw name="Set Screenshot Directory" owner="SeleniumLibrary">
 <arg>${SCREENSHOT_PATH}</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2024-05-22T16:05:59.691670" elapsed="0.000998"/>
+<status status="PASS" start="2024-05-22T17:38:41.423522" elapsed="0.000998"/>
 </kw>
 <kw name="Wait Browser Load" owner="keywords">
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>20</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-22T16:05:59.698653" elapsed="0.006980"/>
+<status status="PASS" start="2024-05-22T17:38:41.432731" elapsed="0.013896"/>
 </kw>
-<status status="PASS" start="2024-05-22T16:05:59.697654" elapsed="0.008977"/>
+<status status="PASS" start="2024-05-22T17:38:41.430737" elapsed="0.015890"/>
 </kw>
 <kw name="Input Username" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-22T16:05:59.713491" level="INFO">Typing text 'appsupport.zycustest273@sminvestments.com' into text field 'class=au--username'.</msg>
+<msg time="2024-05-22T17:38:41.453676" level="INFO">Typing text 'appsupport.zycustest273@sminvestments.com' into text field 'class=au--username'.</msg>
 <arg>class=au--username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-22T16:05:59.711142" elapsed="2.846097"/>
+<status status="PASS" start="2024-05-22T17:38:41.452692" elapsed="3.017441"/>
 </kw>
 <arg>${USER3}</arg>
-<status status="PASS" start="2024-05-22T16:05:59.711142" elapsed="2.846097"/>
+<status status="PASS" start="2024-05-22T17:38:41.450685" elapsed="3.019972"/>
 </kw>
 <kw name="Input User Password" owner="keywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-22T16:06:02.563746" level="INFO">Typing text 'UAT_Password2' into text field 'class=au--password'.</msg>
+<msg time="2024-05-22T17:38:44.476081" level="INFO">Typing text 'UAT_Password2' into text field 'class=au--password'.</msg>
 <arg>class=au--password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-22T16:06:02.563746" elapsed="0.279522"/>
+<status status="PASS" start="2024-05-22T17:38:44.473709" elapsed="0.324283"/>
 </kw>
 <arg>${USER3 PASS}</arg>
-<status status="PASS" start="2024-05-22T16:06:02.563746" elapsed="0.279522"/>
+<status status="PASS" start="2024-05-22T17:38:44.473709" elapsed="0.327511"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-22T16:06:02.866238" level="INFO">Clicking button 'class=action'.</msg>
+<msg time="2024-05-22T17:38:44.831406" level="INFO">Clicking button 'class=action'.</msg>
 <arg>class=action</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-22T16:06:02.865240" elapsed="0.362342"/>
+<status status="PASS" start="2024-05-22T17:38:44.831406" elapsed="0.199323"/>
 </kw>
-<status status="PASS" start="2024-05-22T16:06:02.864243" elapsed="0.363339"/>
+<status status="PASS" start="2024-05-22T17:38:44.830409" elapsed="0.200320"/>
 </kw>
 <kw name="Welcome Page Should Be Open" owner="keywords">
 <kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-22T16:06:05.439516" level="INFO">Element 'class=au--welcome' contains text 'What would you like to do today?'.</msg>
+<msg time="2024-05-22T17:38:50.118748" level="INFO">Element 'class=au--welcome' contains text 'What would you like to do today?'.</msg>
 <arg>class=au--welcome</arg>
 <arg>What would you like to do today?</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-05-22T16:06:03.238649" elapsed="2.200867"/>
+<status status="PASS" start="2024-05-22T17:38:45.040394" elapsed="5.079761"/>
 </kw>
-<status status="PASS" start="2024-05-22T16:06:03.238649" elapsed="2.200867"/>
+<status status="PASS" start="2024-05-22T17:38:45.038400" elapsed="5.081755"/>
 </kw>
-<status status="PASS" start="2024-05-22T16:05:46.989853" elapsed="18.449663"/>
+<status status="PASS" start="2024-05-22T17:38:27.531065" elapsed="22.595085"/>
+</test>
+<test id="s1-t2" name="Bulk Upload Page" line="16">
+<kw name="Click hamburger menu" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:38:50.128565" level="INFO">Clicking element 'class=au--sideMenu'.</msg>
+<arg>class=au--sideMenu</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T17:38:50.128565" elapsed="0.611593"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:38:50.128565" elapsed="0.612982"/>
+</kw>
+<kw name="Click iSupplier" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:38:50.749187" level="INFO">Clicking element 'Xpath://li[@title='iSupplier']'.</msg>
+<arg>Xpath://li[@title='iSupplier']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T17:38:50.747858" elapsed="1.333235"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:38:50.746861" elapsed="1.335002"/>
+</kw>
+<kw name="Click Suppliers" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:38:52.097102" level="INFO">Clicking element '//span[.//text() = 'Suppliers']'.</msg>
+<arg>//span[.//text() = 'Suppliers']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T17:38:52.096209" elapsed="3.616089"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:38:52.095118" elapsed="3.617180"/>
+</kw>
+<kw name="Wait Browser Load" owner="keywords">
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-22T17:38:55.720590" elapsed="0.015007"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:38:55.720590" elapsed="0.016006"/>
+</kw>
+<kw name="Go to iSupplier portal" owner="keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T17:39:05.741716" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T17:38:55.741495" elapsed="10.000221"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:39:05.759648" level="INFO">Page title is 'Suppliers - iSupplier Portal'.</msg>
+<arg>Suppliers - iSupplier Portal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-05-22T17:39:05.741716" elapsed="0.017932"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:38:55.739579" elapsed="10.020069"/>
+</kw>
+<kw name="Click AppXtend Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:39:05.768299" level="INFO">Clicking element 'class=appxbtn'.</msg>
+<arg>class=appxbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T17:39:05.768299" elapsed="0.235941"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:39:05.768299" elapsed="0.235941"/>
+</kw>
+<kw name="Click Bulk Upload Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:39:06.012584" level="INFO">Clicking element 'class=manifestContainer'.</msg>
+<arg>class=manifestContainer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T17:39:06.011944" elapsed="0.278845"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:39:06.010946" elapsed="0.280842"/>
+</kw>
+<kw name="Proceed to Buk Upload App" owner="keywords">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:39:06.340460" level="INFO">Element 'class=appxtend-bold-appname' contains text 'Bulk Upload App'.</msg>
+<arg>class=appxtend-bold-appname</arg>
+<arg>Bulk Upload App</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-05-22T17:39:06.293784" elapsed="0.046676"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:39:06.292785" elapsed="0.048673"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:38:50.128565" elapsed="16.212893"/>
+</test>
+<test id="s1-t3" name="Bulk Upload Create" line="26">
+<kw name="Wait Browser Load" owner="keywords">
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-22T17:39:06.350326" elapsed="0.004883"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:39:06.349328" elapsed="0.006664"/>
+</kw>
+<kw name="Click Product Container" owner="keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T17:39:11.357876" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T17:39:06.357566" elapsed="5.000310"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>class=appxModal</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-22T17:39:11.357876" elapsed="0.111192"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:39:11.469068" level="INFO">Selecting frame 'class=au--bulk-upload-app'.</msg>
+<arg>class=au--bulk-upload-app</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-05-22T17:39:11.469068" elapsed="0.098192"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:39:11.567260" level="INFO">Clicking element 'class=au--select-dropdown-trigger'.</msg>
+<arg>class=au--select-dropdown-trigger</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T17:39:11.567260" elapsed="0.269957"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T17:39:16.838664" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T17:39:11.838261" elapsed="5.000403"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//*[@id="cdk-overlay-0"]/div[2]/div/div[3]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-22T17:39:16.838664" elapsed="0.043775"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T17:39:16.883437" level="INFO">Clicking element '//*[@id="cdk-overlay-0"]/div[2]/div/div[3]'.</msg>
+<arg>//*[@id="cdk-overlay-0"]/div[2]/div/div[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T17:39:16.882439" elapsed="0.208888"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T17:39:22.093077" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T17:39:17.092639" elapsed="5.001426"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:39:06.357566" elapsed="15.736499"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-22T17:39:22.096511" elapsed="6.129503"/>
+</kw>
+<status status="PASS" start="2024-05-22T17:39:06.346964" elapsed="21.882543"/>
 </test>
 <doc>Bulk Upload Test Case</doc>
-<status status="PASS" start="2024-05-22T16:05:46.156630" elapsed="19.298509"/>
+<status status="PASS" start="2024-05-22T17:38:26.077104" elapsed="62.156959"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>
