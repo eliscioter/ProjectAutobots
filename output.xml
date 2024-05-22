@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-22T11:55:49.653996" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="c:\Users\ojt.it.zycus\Documents\robotFramework\tests\test.robot">
+<test id="s1-t1" name="Valid Login" line="8">
+<kw name="Open Browser To Login Page" owner="keywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:55:50.480476" level="INFO">Opening browser 'Chrome' to base url 'https://dewdrops-staging.zycus.com/home/auth'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-22T11:55:50.480476" elapsed="12.536639"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:55:50.480476" elapsed="12.536639"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>${SCREENSHOT_PATH}</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2024-05-22T11:56:03.018121" elapsed="0.000992"/>
+</kw>
+<kw name="Wait Browser Load" owner="keywords">
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-22T11:56:03.021108" elapsed="0.002995"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:03.020111" elapsed="0.003992"/>
+</kw>
+<kw name="Input Username" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:03.029884" level="INFO">Typing text 'appsupport.zycustest273@sminvestments.com' into text field 'class=au--username'.</msg>
+<arg>class=au--username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:03.027889" elapsed="1.163624"/>
+</kw>
+<arg>${USER3}</arg>
+<status status="PASS" start="2024-05-22T11:56:03.026094" elapsed="1.165419"/>
+</kw>
+<kw name="Input User Password" owner="keywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:04.207133" level="INFO">Typing text 'UAT_Password2' into text field 'class=au--password'.</msg>
+<arg>class=au--password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:04.207133" elapsed="0.340955"/>
+</kw>
+<arg>${USER3 PASS}</arg>
+<status status="PASS" start="2024-05-22T11:56:04.207133" elapsed="0.340955"/>
+</kw>
+<kw name="Submit Credentials" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:04.548088" level="INFO">Clicking button 'class=action'.</msg>
+<arg>class=action</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:04.548088" elapsed="0.216144"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:04.548088" elapsed="0.216144"/>
+</kw>
+<kw name="Welcome Page Should Be Open" owner="keywords">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:08.124091" level="INFO">Element 'class=au--welcome' contains text 'What would you like to do today?'.</msg>
+<arg>class=au--welcome</arg>
+<arg>What would you like to do today?</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-05-22T11:56:04.764232" elapsed="3.359859"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:04.764232" elapsed="3.359859"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:55:50.480476" elapsed="17.651627"/>
+</test>
+<test id="s1-t2" name="Bulk Upload Page" line="16">
+<kw name="Click hamburger menu" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:08.132103" level="INFO">Clicking element 'class=au--sideMenu'.</msg>
+<arg>class=au--sideMenu</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:08.132103" elapsed="0.282163"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:08.132103" elapsed="0.282163"/>
+</kw>
+<kw name="Click iSupplier" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:08.422245" level="INFO">Clicking element 'Xpath://li[@title='iSupplier']'.</msg>
+<arg>Xpath://li[@title='iSupplier']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:08.421247" elapsed="1.151710"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:08.420249" elapsed="1.153707"/>
+</kw>
+<kw name="Click Suppliers" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:09.584965" level="INFO">Clicking element '//span[.//text() = 'Suppliers']'.</msg>
+<arg>//span[.//text() = 'Suppliers']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:09.584965" elapsed="2.828003"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:09.583929" elapsed="2.829039"/>
+</kw>
+<kw name="Wait Browser Load" owner="keywords">
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-22T11:56:12.420946" elapsed="0.015022"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:12.419949" elapsed="0.016019"/>
+</kw>
+<kw name="Go to iSupplier portal" owner="keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:22.440135" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:12.437979" elapsed="10.002156"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:22.440135" level="INFO">Page title is 'Suppliers - iSupplier Portal'.</msg>
+<arg>Suppliers - iSupplier Portal</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-05-22T11:56:22.440135" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:12.436967" elapsed="10.003168"/>
+</kw>
+<kw name="Click AppXtend Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:22.440135" level="INFO">Clicking element 'class=appxbtn'.</msg>
+<arg>class=appxbtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:22.440135" elapsed="0.167029"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:22.440135" elapsed="0.167029"/>
+</kw>
+<kw name="Click Bulk Upload Button" owner="keywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:22.622790" level="INFO">Clicking element 'class=manifestContainer'.</msg>
+<arg>class=manifestContainer</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-22T11:56:22.622790" elapsed="0.201444"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:22.622790" elapsed="0.201444"/>
+</kw>
+<kw name="Proceed to Buk Upload App" owner="keywords">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:22.892569" level="INFO">Element 'class=appxtend-bold-appname' contains text 'Bulk Upload App'.</msg>
+<arg>class=appxtend-bold-appname</arg>
+<arg>Bulk Upload App</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-05-22T11:56:22.843684" elapsed="0.048885"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:22.842691" elapsed="0.049878"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:08.132103" elapsed="14.760466"/>
+</test>
+<test id="s1-t3" name="Bulk Upload Create" line="26">
+<kw name="Wait Browser Load" owner="keywords">
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>20</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-05-22T11:56:22.892569" elapsed="0.015329"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:22.892569" elapsed="0.016326"/>
+</kw>
+<kw name="Move Focus Element" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:22.911225" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2024-05-22T11:56:22.911225" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2024-05-22T11:56:22.911225" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:22.910222" elapsed="0.044558"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:25.955922" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:22.954780" elapsed="3.001142"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:22.908895" elapsed="3.047027"/>
+</kw>
+<kw name="Click Product" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:25.955922" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2024-05-22T11:56:25.955922" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2024-05-22T11:56:25.955922" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:25.955922" elapsed="0.020097"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:28.977909" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:25.977016" elapsed="3.000893"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:25.955922" elapsed="3.021987"/>
+</kw>
+<kw name="Open Dropdown" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:28.977909" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-05-22T11:56:28.977909" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-05-22T11:56:28.977909" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:28.977909" elapsed="0.035046"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:32.014408" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:29.013985" elapsed="3.000423"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:28.977909" elapsed="3.036499"/>
+</kw>
+<kw name="Navigate to iSupplier" owner="keywords">
+<kw name="Press Arrow Down Key" owner="select_dropdown">
+<arg>${index}</arg>
+<status status="PASS" start="2024-05-22T11:56:32.014408" elapsed="0.107680"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:35.122268" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:32.122088" elapsed="3.000180"/>
+</kw>
+<arg>${2}</arg>
+<status status="PASS" start="2024-05-22T11:56:32.014408" elapsed="3.107860"/>
+</kw>
+<kw name="Select iSupplier" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:35.122268" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-05-22T11:56:35.122268" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-05-22T11:56:35.122268" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:35.122268" elapsed="0.104435"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:38.228344" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:35.227698" elapsed="3.000646"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:35.122268" elapsed="3.106076"/>
+</kw>
+<kw name="Click Object" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:38.228344" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2024-05-22T11:56:38.228344" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2024-05-22T11:56:38.228344" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:38.228344" elapsed="0.017228"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:41.245734" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:38.245572" elapsed="3.000162"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:38.228344" elapsed="3.017390"/>
+</kw>
+<kw name="Open Dropdown" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:41.245734" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-05-22T11:56:41.245734" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-05-22T11:56:41.245734" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:41.245734" elapsed="0.023923"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:44.271038" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:41.269657" elapsed="3.001381"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:41.245734" elapsed="3.025304"/>
+</kw>
+<kw name="Navigate to Supplier" owner="keywords">
+<kw name="Press Arrow Down Key" owner="select_dropdown">
+<arg>${index}</arg>
+<status status="PASS" start="2024-05-22T11:56:44.271038" elapsed="0.104563"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:47.376238" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:44.375601" elapsed="3.000637"/>
+</kw>
+<arg>${0}</arg>
+<status status="PASS" start="2024-05-22T11:56:44.271038" elapsed="3.105200"/>
+</kw>
+<kw name="Select Supplier" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:47.376238" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-05-22T11:56:47.376238" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-05-22T11:56:47.376238" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:47.376238" elapsed="0.027688"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:50.405592" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:47.404923" elapsed="3.000669"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:47.376238" elapsed="3.029354"/>
+</kw>
+<kw name="Click Action" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:50.405592" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2024-05-22T11:56:50.405592" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2024-05-22T11:56:50.405592" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:50.405592" elapsed="0.019272"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:53.426230" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:50.425652" elapsed="3.000578"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:50.405592" elapsed="3.020638"/>
+</kw>
+<kw name="Open Dropdown" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:53.426230" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-05-22T11:56:53.426230" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-05-22T11:56:53.426230" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:53.426230" elapsed="0.024049"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:56.451539" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:53.450279" elapsed="3.001260"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:53.426230" elapsed="3.025309"/>
+</kw>
+<kw name="Navigate to Create" owner="keywords">
+<kw name="Press Arrow Down Key" owner="select_dropdown">
+<arg>${index}</arg>
+<status status="PASS" start="2024-05-22T11:56:56.451539" elapsed="0.105271"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:56:59.556912" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:56.556810" elapsed="3.000102"/>
+</kw>
+<arg>${0}</arg>
+<status status="PASS" start="2024-05-22T11:56:56.451539" elapsed="3.105373"/>
+</kw>
+<kw name="Select Create" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:56:59.556912" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-05-22T11:56:59.556912" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-05-22T11:56:59.560964" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:56:59.556912" elapsed="0.030817"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:57:02.589669" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:56:59.588726" elapsed="3.000943"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:59.556912" elapsed="3.032757"/>
+</kw>
+<kw name="Click Submit" owner="keywords">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:57:02.589669" level="INFO">Sending key(s) ('TAB',) to page.</msg>
+<msg time="2024-05-22T11:57:02.589669" level="INFO">Pressing special key TAB to browser.</msg>
+<msg time="2024-05-22T11:57:02.589669" level="INFO">Releasing special key TAB.</msg>
+<arg>None</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:57:02.589669" elapsed="0.016355"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:57:05.606217" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:57:02.606024" elapsed="3.000193"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-05-22T11:57:05.606217" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg time="2024-05-22T11:57:05.606217" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg time="2024-05-22T11:57:05.606217" level="INFO">Releasing special key ENTER.</msg>
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-05-22T11:57:05.606217" elapsed="0.158363"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-05-22T11:57:15.766187" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-05-22T11:57:05.765579" elapsed="10.000608"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:57:02.589669" elapsed="13.176518"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-22T11:57:15.766187" elapsed="4.394743"/>
+</kw>
+<status status="PASS" start="2024-05-22T11:56:22.892569" elapsed="57.268361"/>
+</test>
+<doc>Bulk Upload Test Case</doc>
+<status status="PASS" start="2024-05-22T11:55:49.660006" elapsed="90.500924"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
