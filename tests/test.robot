@@ -24,23 +24,24 @@ Bulk Upload Page
     Proceed to Buk Upload App
     
 Bulk Upload Create
-    # *Choose Product
     Wait Browser Load
-    Move Focus Element
-    Click Product
-    Open Dropdown
-    Navigate to iSupplier    ${2}
-    Select iSupplier
+    Click Product Container
+    # *Choose Product
+    # Move Focus Element
+    # Click Product
+    # Open Dropdown
+    # Navigate to iSupplier    ${2}
+    # Select iSupplier
     # *Choose Object
-    Click Object
-    Open Dropdown
-    Navigate to Supplier    ${0}
-    Select Supplier
+    # Click Object
+    # Open Dropdown
+    # Navigate to Supplier    ${0}
+    # Select Supplier
     # *Choose Action
-    Click Action
-    Open Dropdown
-    Navigate to Create    ${0}
-    Select Create
-    Click Submit
+    # Click Action
+    # Open Dropdown
+    # Navigate to Create    ${0}
+    # Select Create
+    # Click Submit
     [Teardown]    Close Browser
 

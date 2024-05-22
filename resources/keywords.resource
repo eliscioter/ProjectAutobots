@@ -47,6 +47,16 @@ Click Bulk Upload Button
 Proceed to Buk Upload App
     Element Should Contain    class=appxtend-bold-appname     Bulk Upload App
 
+# *Test without pyautogui
+Click Product Container
+    Sleep    5
+    Wait Until Element Is Visible    class=appxModal
+    Select Frame    class=au--bulk-upload-app
+    Click Element  class=au--select-dropdown-trigger
+    Sleep    5
+    Wait Until Element Is Visible    //*[@id="cdk-overlay-0"]/div[2]/div/div[3]
+    Click Element    //*[@id="cdk-overlay-0"]/div[2]/div/div[3]
+    Sleep    5
 # *Choose Product
 Move Focus Element 
     Press Keys    None    TAB
