@@ -5,7 +5,8 @@
 ### Install the following:
 
 1. robotframework-seleniumlibrary
-```pip install --upgrade robotframework-seleniumlibrary
+```
+pip install --upgrade robotframework-seleniumlibrary
 ```
 
 2. pyautogui
@@ -18,3 +19,8 @@ Chromedriver: [Chromedriver]https://storage.googleapis.com/chrome-for-testing-pu
 
 ##### Place the chromedriver.exe in the root folder
 ###### chromedriver.exe is already installed
+
+4. Install python_dotenv
+```
+pip install python-dotenv
+```
