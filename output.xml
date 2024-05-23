@@ -1,302 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-23T08:41:01.028296" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="c:\Users\ojt.it.zycus\Documents\robotFramework\tests\test.robot">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-23T15:44:38.327056" rpa="false" schemaversion="5">
+<suite id="s1" name="appXtend-test" source="c:\Users\ojt.it.zycus\Documents\robotFramework\tests\appXtend-test.robot">
 <test id="s1-t1" name="Valid Login" line="8">
 <kw name="Open Browser To Login Page" owner="keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:01.876727" level="INFO">Opening browser 'Chrome' to base url 'https://dewdrops-staging.zycus.com/home/auth'.</msg>
+<msg time="2024-05-23T15:44:38.896625" level="INFO">Opening browser 'Chrome' to base url 'https://dewdrops-staging.zycus.com/home/auth'.</msg>
+<msg time="2024-05-23T15:44:38.912211" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-23T15:44:38.912211" level="FAIL">AttributeError: 'Options' object has no attribute '{prefs: {"download.default_directory": "c:Usersojt.it.zycusDocumentsobotFrameworkdownloads"}}'</msg>
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
+<arg>options={prefs: {"download.default_directory": "c:\Users\ojt.it.zycus\Documents\robotFramework\downloads"}}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-05-23T08:41:01.876727" elapsed="10.000517"/>
+<status status="FAIL" start="2024-05-23T15:44:38.896625" elapsed="0.033937">AttributeError: 'Options' object has no attribute '{prefs: {"download.default_directory": "c:Usersojt.it.zycusDocumentsobotFrameworkdownloads"}}'</status>
 </kw>
-<status status="PASS" start="2024-05-23T08:41:01.876727" elapsed="10.000517"/>
+<status status="FAIL" start="2024-05-23T15:44:38.896625" elapsed="0.033937">AttributeError: 'Options' object has no attribute '{prefs: {"download.default_directory": "c:Usersojt.it.zycusDocumentsobotFrameworkdownloads"}}'</status>
 </kw>
 <kw name="Set Screenshot Directory" owner="SeleniumLibrary">
 <arg>${SCREENSHOT_PATH}</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2024-05-23T08:41:11.877244" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.930562" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>20</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-23T08:41:11.888572" elapsed="0.007759"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:11.877244" elapsed="0.019087"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.930562" elapsed="0.000000"/>
 </kw>
 <kw name="Input Username" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:11.900321" level="INFO">Typing text 'appsupport.zycustest273@sminvestments.com' into text field 'class=au--username'.</msg>
-<arg>class=au--username</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:11.899326" elapsed="0.993142"/>
-</kw>
-<arg>${USER3}</arg>
-<status status="PASS" start="2024-05-23T08:41:11.898327" elapsed="0.995138"/>
+<arg>${USER1}</arg>
+<status status="NOT RUN" start="2024-05-23T15:44:38.939252" elapsed="0.000987"/>
 </kw>
 <kw name="Input User Password" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:12.904036" level="INFO">Typing text 'UAT_Password2' into text field 'class=au--password'.</msg>
-<arg>class=au--password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:12.902618" elapsed="0.339357"/>
-</kw>
-<arg>${USER3 PASS}</arg>
-<status status="PASS" start="2024-05-23T08:41:12.901550" elapsed="0.342450"/>
+<arg>${USER1 PASS}</arg>
+<status status="NOT RUN" start="2024-05-23T15:44:38.941236" elapsed="0.000998"/>
 </kw>
 <kw name="Submit Credentials" owner="keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:13.244000" level="INFO">Clicking button 'class=action'.</msg>
-<arg>class=action</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:13.244000" elapsed="0.147946"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:13.244000" elapsed="0.147946"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.943231" elapsed="0.000000"/>
 </kw>
 <kw name="Welcome Page Should Be Open" owner="keywords">
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:19.187531" level="INFO">Element 'class=au--welcome' contains text 'What would you like to do today?'.</msg>
-<arg>class=au--welcome</arg>
-<arg>What would you like to do today?</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-05-23T08:41:13.391946" elapsed="5.795585"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.945226" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-23T08:41:13.391946" elapsed="5.795585"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:01.875258" elapsed="17.312273"/>
+<status status="FAIL" start="2024-05-23T15:44:38.896625" elapsed="0.049598">AttributeError: 'Options' object has no attribute '{prefs: {"download.default_directory": "c:Usersojt.it.zycusDocumentsobotFrameworkdownloads"}}'</status>
 </test>
 <test id="s1-t2" name="Bulk Upload Page" line="16">
 <kw name="Click hamburger menu" owner="keywords">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:19.291562" level="INFO">Clicking element 'class=au--sideMenu'.</msg>
+<msg time="2024-05-23T15:44:38.954530" level="INFO">Clicking element 'class=au--sideMenu'.</msg>
+<msg time="2024-05-23T15:44:38.955527" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-23T15:44:38.955527" level="FAIL">No browser is open.</msg>
 <arg>class=au--sideMenu</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:19.290565" elapsed="0.158485"/>
+<status status="FAIL" start="2024-05-23T15:44:38.951869" elapsed="0.011831">No browser is open.</status>
 </kw>
-<status status="PASS" start="2024-05-23T08:41:19.289567" elapsed="0.159483"/>
+<status status="FAIL" start="2024-05-23T15:44:38.950214" elapsed="0.013486">No browser is open.</status>
 </kw>
 <kw name="Click iSupplier" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:19.452786" level="INFO">Clicking element 'Xpath://li[@title='iSupplier']'.</msg>
-<arg>Xpath://li[@title='iSupplier']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:19.449050" elapsed="1.706270"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:19.449050" elapsed="1.706270"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.974700" elapsed="0.000000"/>
 </kw>
 <kw name="Click Suppliers" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:21.211048" level="INFO">Clicking element '//span[.//text() = 'Suppliers']'.</msg>
-<arg>//span[.//text() = 'Suppliers']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:21.211048" elapsed="2.900580"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:21.211048" elapsed="2.900580"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.974700" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>20</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-23T08:41:24.171197" elapsed="0.044636"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:24.171197" elapsed="0.044636"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.974700" elapsed="0.000000"/>
 </kw>
 <kw name="Go to iSupplier portal" owner="keywords">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:41:34.242309" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:41:24.242050" elapsed="10.000259"/>
-</kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:34.242309" level="INFO">Page title is 'Suppliers - iSupplier Portal'.</msg>
-<arg>Suppliers - iSupplier Portal</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-05-23T08:41:34.242309" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:24.242050" elapsed="10.000259"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.974700" elapsed="0.000000"/>
 </kw>
 <kw name="Click AppXtend Button" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:34.257935" level="INFO">Clicking element 'class=appxbtn'.</msg>
-<arg>class=appxbtn</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:34.257935" elapsed="0.144165"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:34.257935" elapsed="0.144165"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.974700" elapsed="0.000000"/>
 </kw>
 <kw name="Click Bulk Upload Button" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:34.402100" level="INFO">Clicking element 'class=manifestContainer'.</msg>
-<arg>class=manifestContainer</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:34.402100" elapsed="0.202824"/>
+<status status="NOT RUN" start="2024-05-23T15:44:38.981204" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-23T08:41:34.402100" elapsed="0.202824"/>
+<kw name="Proceed to Bulk Upload App" owner="keywords">
+<status status="NOT RUN" start="2024-05-23T15:44:38.981204" elapsed="0.000000"/>
 </kw>
-<kw name="Proceed to Buk Upload App" owner="keywords">
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:34.639604" level="INFO">Element 'class=appxtend-bold-appname' contains text 'Bulk Upload App'.</msg>
-<arg>class=appxtend-bold-appname</arg>
-<arg>Bulk Upload App</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-05-23T08:41:34.608147" elapsed="0.031457"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:34.607149" elapsed="0.032455"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:19.288580" elapsed="15.354031"/>
+<status status="FAIL" start="2024-05-23T15:44:38.949217" elapsed="0.031987">No browser is open.</status>
 </test>
 <test id="s1-t3" name="Bulk Upload Create" line="26">
 <kw name="Wait Browser Load" owner="keywords">
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<msg time="2024-05-23T15:44:38.996227" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-23T15:44:38.996227" level="FAIL">No browser is open.</msg>
 <arg>20</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-05-23T08:41:34.642611" elapsed="0.000000"/>
+<status status="FAIL" start="2024-05-23T15:44:38.995232" elapsed="0.004106">No browser is open.</status>
 </kw>
-<status status="PASS" start="2024-05-23T08:41:34.642611" elapsed="0.000000"/>
+<status status="FAIL" start="2024-05-23T15:44:38.994233" elapsed="0.005105">No browser is open.</status>
 </kw>
 <kw name="Click Product Container" owner="keywords">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:41:39.652600" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:41:34.651073" elapsed="5.001527"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>class=appxModal</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-23T08:41:39.652600" elapsed="0.020154"/>
-</kw>
-<kw name="Select Frame" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:39.672754" level="INFO">Selecting frame 'class=au--bulk-upload-app'.</msg>
-<arg>class=au--bulk-upload-app</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="PASS" start="2024-05-23T08:41:39.672754" elapsed="0.047449"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:39.720203" level="INFO">Clicking element 'xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[1]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger'.</msg>
-<arg>xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[1]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:39.720203" elapsed="0.142905"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:41:44.863403" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:41:39.863347" elapsed="5.000056"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>Xpath://div[@title='iSupplier']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-23T08:41:44.863403" elapsed="0.023805"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:44.887208" level="INFO">Clicking element 'Xpath://div[@title='iSupplier']'.</msg>
-<arg>Xpath://div[@title='iSupplier']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:44.887208" elapsed="0.250438"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:41:50.138023" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:41:45.137646" elapsed="5.000377"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:34.650075" elapsed="15.487948"/>
+<status status="NOT RUN" start="2024-05-23T15:44:39.007004" elapsed="0.000000"/>
 </kw>
 <kw name="Click Object Container" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:50.138023" level="INFO">Clicking element 'xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[2]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger'.</msg>
-<arg>xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[2]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:50.138023" elapsed="0.146976"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:41:55.285058" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:41:50.284999" elapsed="5.000059"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>Xpath://div[@title='supplier']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-23T08:41:55.285058" elapsed="0.014842"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:55.299900" level="INFO">Clicking element 'Xpath://div[@title='supplier']'.</msg>
-<arg>Xpath://div[@title='supplier']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:55.299900" elapsed="0.131754"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:50.138023" elapsed="5.293631"/>
+<status status="NOT RUN" start="2024-05-23T15:44:39.008995" elapsed="0.000000"/>
 </kw>
 <kw name="Click Action Container" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:41:55.431654" level="INFO">Clicking element 'xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[3]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger'.</msg>
-<arg>xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[3]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:41:55.431654" elapsed="0.129192"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:42:00.562941" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:41:55.560846" elapsed="5.002095"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>Xpath://div[@title='Create']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-05-23T08:42:00.562941" elapsed="0.021018"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:42:00.583959" level="INFO">Clicking element 'Xpath://div[@title='Create']'.</msg>
-<arg>Xpath://div[@title='Create']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:42:00.583959" elapsed="0.141711"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:42:05.727191" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:42:00.726669" elapsed="5.000854"/>
-</kw>
-<status status="PASS" start="2024-05-23T08:41:55.431654" elapsed="10.295869"/>
+<status status="NOT RUN" start="2024-05-23T15:44:39.009992" elapsed="0.000000"/>
 </kw>
 <kw name="Click Submit Button" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-05-23T08:42:05.730400" level="INFO">Clicking element 'xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[4]/dew-btn/button'.</msg>
-<arg>xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[4]/dew-btn/button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-05-23T08:42:05.729519" elapsed="0.219569"/>
+<status status="NOT RUN" start="2024-05-23T15:44:39.011335" elapsed="0.001000"/>
+</kw>
+<status status="FAIL" start="2024-05-23T15:44:38.993234" elapsed="0.019101">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Download Upload Templates" line="33">
+<kw name="Click Download Bulk Upload Template Button" owner="keywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-23T15:44:39.018610" level="INFO">Clicking button 'xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div[2]/data-template/dew-block/div/div/dew-attachment/dew-view-attachments/div/div/div/div[2]/dew-btn/button'.</msg>
+<msg time="2024-05-23T15:44:39.018610" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-05-23T15:44:39.018610" level="FAIL">No browser is open.</msg>
+<arg>xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div[2]/data-template/dew-block/div/div/dew-attachment/dew-view-attachments/div/div/div/div[2]/dew-btn/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-23T15:44:39.017577" elapsed="0.005301">No browser is open.</status>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-05-23T08:42:10.950820" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
+<arg>20</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-05-23T08:42:05.949088" elapsed="5.001732"/>
+<status status="NOT RUN" start="2024-05-23T15:44:39.022878" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-23T08:42:05.728520" elapsed="5.222300"/>
+<status status="FAIL" start="2024-05-23T15:44:39.017577" elapsed="0.005301">No browser is open.</status>
+</kw>
+<kw name="Verify Downloaded Template File" owner="keywords">
+<arg>${FILENAME}</arg>
+<status status="NOT RUN" start="2024-05-23T15:44:39.022878" elapsed="0.000000"/>
+</kw>
+<kw name="Upload Downloaded Template File" owner="keywords">
+<status status="NOT RUN" start="2024-05-23T15:44:39.022878" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-05-23T08:42:10.950820" elapsed="4.275290"/>
+<status status="PASS" start="2024-05-23T15:44:39.022878" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-05-23T08:41:34.642611" elapsed="40.584499"/>
+<status status="FAIL" start="2024-05-23T15:44:39.014327" elapsed="0.008551">No browser is open.</status>
 </test>
 <doc>Bulk Upload Test Case</doc>
-<status status="PASS" start="2024-05-23T08:41:01.043958" elapsed="74.185549"/>
+<status status="FAIL" start="2024-05-23T15:44:38.342677" elapsed="0.698527"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="4" skip="0" id="s1" name="appXtend-test">appXtend-test</stat>
 </suite>
 </statistics>
 <errors>
