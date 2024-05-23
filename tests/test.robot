@@ -26,22 +26,8 @@ Bulk Upload Page
 Bulk Upload Create
     Wait Browser Load
     Click Product Container
-    # *Choose Product
-    # Move Focus Element
-    # Click Product
-    # Open Dropdown
-    # Navigate to iSupplier    ${2}
-    # Select iSupplier
-    # *Choose Object
-    # Click Object
-    # Open Dropdown
-    # Navigate to Supplier    ${0}
-    # Select Supplier
-    # *Choose Action
-    # Click Action
-    # Open Dropdown
-    # Navigate to Create    ${0}
-    # Select Create
-    # Click Submit
+    Click Object Container
+    Click Action Container
+    Click Submit Button
     [Teardown]    Close Browser
 

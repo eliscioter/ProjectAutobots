@@ -50,69 +50,30 @@ Proceed to Buk Upload App
 # *Test without pyautogui
 Click Product Container
     Sleep    5
+    # *This is for moving the focus to the appXtend modal
     Wait Until Element Is Visible    class=appxModal
     Select Frame    class=au--bulk-upload-app
-    Click Element  class=au--select-dropdown-trigger
+    # *Open dropdown
+    Click Element  xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[1]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger
     Sleep    5
-    Wait Until Element Is Visible    //*[@id="cdk-overlay-0"]/div[2]/div/div[3]
-    Click Element    //*[@id="cdk-overlay-0"]/div[2]/div/div[3]
+    # *Click iSupplier
+    Wait Until Element Is Visible    Xpath://div[@title='iSupplier']
+    Click Element    Xpath://div[@title='iSupplier']
     Sleep    5
-# *Choose Product
-Move Focus Element 
-    Press Keys    None    TAB
-    Sleep    3
 
-Click Product
-    Press Keys    None    TAB
-    Sleep    3
+Click Object Container
+    Click Element    xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[2]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger
+    Sleep    5
+    Wait Until Element Is Visible    Xpath://div[@title='supplier']
+    Click Element    Xpath://div[@title='supplier']
 
-Open Dropdown
-    Press Keys    None    ENTER
-    Sleep    3
+Click Action Container
+    Click Element    xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[3]/dew-select/dew-dropdown/div/div/dew-dropdown-trigger
+    Sleep    5
+    Wait Until Element Is Visible    Xpath://div[@title='Create']
+    Click Element    Xpath://div[@title='Create']
+    Sleep    5
 
-Navigate to iSupplier
-    [Arguments]    ${index}
-    press_arrow_down_key    ${index}
-    Sleep    3
-
-Select iSupplier
-    Press Keys    None    ENTER
-    Sleep    3
-
-# *Choose Object
-Click Object
-    Press Keys    None    TAB
-    Sleep    3
-
-# *Open dropdown
-
-Navigate to Supplier
-    [Arguments]    ${index}
-    press_arrow_down_key    ${index}
-    Sleep    3
-
-Select Supplier
-    Press Keys    None    ENTER
-    Sleep    3
-
-# *Choose Action
-Click Action
-    Press Keys    None    TAB
-    Sleep    3
-
-# *Open dropdown
-
-Navigate to Create
-    [Arguments]    ${index}
-    press_arrow_down_key    ${index}
-    Sleep    3
-
-Select Create
-    Press Keys    None    ENTER
-    Sleep    3
-
-Click Submit
-    Press Keys    None    TAB
-    Sleep    3
-    Press Keys    None    ENTER
-    Sleep    10
+Click Submit Button
+    Click Element    xpath=/html/body/app-root/div/app-root/div/app-root/div/eproc-create/div/div/product-selection/div/dew-row/dew-col[4]/dew-btn/button
+    Sleep    5
