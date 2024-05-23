@@ -6,7 +6,7 @@
 
 1. robotframework-seleniumlibrary
 ```
-pip install --upgrade robotframework-seleniumlibrary
+pip install robotframework-seleniumlibrary
 ```
 
 2. pyautogui
