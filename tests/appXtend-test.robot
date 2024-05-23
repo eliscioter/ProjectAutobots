@@ -9,8 +9,8 @@ Valid Login
     Open Browser To Login Page
     Set Screenshot Directory    ${SCREENSHOT_PATH}
     Wait Browser Load    
-    Input Username    ${USER3}
-    Input User Password    ${USER3 PASS}
+    Input Username    ${USER1}
+    Input User Password    ${USER1 PASS}
     Submit Credentials
     Welcome Page Should Be Open
 Bulk Upload Page
@@ -21,7 +21,7 @@ Bulk Upload Page
     Go to iSupplier portal
     Click AppXtend Button
     Click Bulk Upload Button
-    Proceed to Buk Upload App
+    Proceed to Bulk Upload App
     
 Bulk Upload Create
     Wait Browser Load
@@ -29,5 +29,10 @@ Bulk Upload Create
     Click Object Container
     Click Action Container
     Click Submit Button
+
+Download Upload Templates
+    Click Download Bulk Upload Template Button
+    Verify Downloaded Template File    ${FILENAME}
+    Upload Downloaded Template File
     [Teardown]    Close Browser
 
