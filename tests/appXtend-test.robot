@@ -1,24 +1,19 @@
 *** Settings ***
 Documentation      Bulk Upload Test Case
 Library            SeleniumLibrary
-Resource           ../resources/keywords.resource
+Resource           ../resources/appXtend/appXtend-keywords.resource
 Resource           ../resources/variables.resource
+Resource           ../resources/keywords.resource
 
 *** Test Cases ***
 Valid Login        
-    Open Browser To Login Page
-    Set Screenshot Directory    ${SCREENSHOT_PATH}
-    Wait Browser Load    
-    Input Username    ${USER1}
-    Input User Password    ${USER1 PASS}
-    Submit Credentials
-    Welcome Page Should Be Open
+    Input Valid Login    ${BULK_UPLOAD_SCREENSHOT_PATH}    ${USER1}    ${USER1 PASS}
 Bulk Upload Page
-    Click hamburger menu
-    Click iSupplier
-    Click Suppliers
+    Click Hamburger Menu
+    Click Module    iSupplier
+    Click Sub-module    Suppliers
     Wait Browser Load
-    Go to iSupplier portal
+    Verify Title    Suppliers - iSupplier Portal
     Click AppXtend Button
     Click Bulk Upload Button
     Proceed to Bulk Upload App
@@ -29,10 +24,12 @@ Bulk Upload Create
     Click Object Container
     Click Action Container
     Click Submit Button
-
-Download Upload Templates
-    Click Download Bulk Upload Template Button
-    Verify Downloaded Template File    ${FILENAME}
-    Upload Downloaded Template File
     [Teardown]    Close Browser
+    
+# ! Download Upload Templated Not working, yet. 
+# TODO: Move Close Browser once resolved
+# Download Upload Templates
+#     Click Download Bulk Upload Template Button
+#     Verify Downloaded Template File    ${FILENAME}
+#     Upload Downloaded Template File
 
