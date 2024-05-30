@@ -49,5 +49,5 @@ Verify Downloaded Template File
 
 # ! Not working yet
 Upload Downloaded Template File
-    Choose File   //*[@id="file"]/dew-file-upload/div/input[1]    C:\Users\ojt.it.zycus\Downloads\Historical Bulk Upload Template_143_AppX (10).xlsx
+    Choose File   //*[@id="file"]/dew-file-upload/div/input[1]    C:\\Users\\ojt.it.zycus\\Downloads\\Historical Bulk Upload Template_143_AppX (15).xlsx
     Sleep    30
