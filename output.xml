@@ -1,500 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T11:59:59.991341" rpa="false" schemaversion="5">
-<suite id="s1" name="Analyze" source="c:\Users\ojt.it.zycus\Documents\robotFramework\tests\analyze.robot">
-<test id="s1-t1" name="Valid Login" line="12">
-<kw name="Input Valid Login" owner="keywords">
-<kw name="Open Browser To Login Page" owner="keywords">
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-04T20:01:12.552743" rpa="false" schemaversion="5">
+<suite id="s1" name="Supplier" source="c:\Users\ojt.it.zycus\Documents\robotFramework\tests\quick-source\supplier.robot">
+<test id="s1-t1" name="Valid Login" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:01.256222" level="INFO">Opening browser 'Chrome' to base url 'https://dewdrops-staging.zycus.com/home/auth'.</msg>
-<msg time="2024-06-04T12:00:03.111708" level="WARN">The chromedriver version (124.0.6367.155) detected in PATH at C:\Users\ojt.it.zycus\Documents\robotFramework\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.141); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
-<arg>${LOGIN URL}</arg>
-<arg>${BROWSER}</arg>
+<msg time="2024-06-04T20:01:13.135808" level="INFO">Opening browser 'Chrome' to base url 'https://dewdrops-staging.zycus.com/zsp/guest'.</msg>
+<msg time="2024-06-04T20:01:14.942210" level="WARN">The chromedriver version (124.0.6367.155) detected in PATH at C:\Users\ojt.it.zycus\Documents\robotFramework\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.141); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>https://dewdrops-staging.zycus.com/zsp/guest</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-04T12:00:01.256222" elapsed="15.075310"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:01.240601" elapsed="15.090931"/>
+<status status="PASS" start="2024-06-04T20:01:13.135808" elapsed="16.716816"/>
 </kw>
 <kw name="Set Screenshot Directory" owner="SeleniumLibrary">
-<arg>${SCREENSHOT_PATH}</arg>
+<arg>${QUICK_SOURCE_SCREENSHOT_PATH}</arg>
 <doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2024-06-04T12:00:16.331532" elapsed="0.000000"/>
+<status status="PASS" start="2024-06-04T20:01:29.852624" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Browser Load" owner="keywords">
 <kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
 <arg>30</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:00:16.331532" elapsed="0.016046"/>
+<status status="PASS" start="2024-06-04T20:01:29.852624" elapsed="0.020224"/>
 </kw>
-<status status="PASS" start="2024-06-04T12:00:16.331532" elapsed="0.017008"/>
-</kw>
-<kw name="Input Username" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:16.350535" level="INFO">Typing text 'appsupport.zycustest274@sminvestments.com' into text field 'class=au--username'.</msg>
-<arg>class=au--username</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:16.349538" elapsed="1.265440"/>
-</kw>
-<arg>${EMAIL}</arg>
-<status status="PASS" start="2024-06-04T12:00:16.348540" elapsed="1.266438"/>
-</kw>
-<kw name="Input User Password" owner="keywords">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:17.617014" level="INFO">Typing text 'OaXeNaAiUiV$6' into text field 'class=au--password'.</msg>
-<arg>class=au--password</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:17.617014" elapsed="0.356786"/>
-</kw>
-<arg>${PASS}</arg>
-<status status="PASS" start="2024-06-04T12:00:17.614978" elapsed="0.358822"/>
-</kw>
-<kw name="Submit Credentials" owner="keywords">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:17.975795" level="INFO">Clicking button 'class=action'.</msg>
-<arg>class=action</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:17.974797" elapsed="0.459542"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:17.973800" elapsed="0.460539"/>
-</kw>
-<kw name="Welcome Page Should Be Open" owner="keywords">
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:20.729980" level="INFO">Element 'class=au--welcome' contains text 'What would you like to do today?'.</msg>
-<arg>class=au--welcome</arg>
-<arg>What would you like to do today?</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2024-06-04T12:00:18.434339" elapsed="2.295641"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:18.434339" elapsed="2.295641"/>
-</kw>
-<arg>${NORMAL_SOURCING_SCREENSHOT_PATH}</arg>
-<arg>${USER2}</arg>
-<arg>${USER2 PASS}</arg>
-<status status="PASS" start="2024-06-04T12:00:01.240601" elapsed="19.489379"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:01.237847" elapsed="19.502184"/>
-</test>
-<test id="s1-t2" name="Full Source Page" line="15">
-<kw name="Click Hamburger Menu" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:20.796561" level="INFO">Clicking element 'class=au--sideMenu'.</msg>
-<arg>class=au--sideMenu</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:20.795564" elapsed="0.168577"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:20.794567" elapsed="0.169574"/>
-</kw>
-<kw name="Click Module" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:20.975283" level="INFO">Clicking element 'Xpath://li[@title='iSource']'.</msg>
-<arg>Xpath://li[@title='${module}']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:20.975283" elapsed="1.704385"/>
-</kw>
-<arg>iSource</arg>
-<status status="PASS" start="2024-06-04T12:00:20.974287" elapsed="1.705381"/>
-</kw>
-<kw name="Click Sub-module" owner="keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:22.695766" level="INFO">Clicking element '//span[.//text() = 'Full Source']'.</msg>
-<arg>//span[.//text() = '${sub_module}']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:22.695766" elapsed="2.677880"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:00:30.374253" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:00:25.373646" elapsed="5.000607"/>
-</kw>
-<arg>Full Source</arg>
-<status status="PASS" start="2024-06-04T12:00:22.693503" elapsed="7.680750"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:00:30.495321" elapsed="0.012281"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:30.492283" elapsed="0.015319"/>
-</kw>
-<kw name="Verify Title" owner="keywords">
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:00:30.521209" elapsed="0.010124"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:30.521209" elapsed="0.010124"/>
-</kw>
-<kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:30.599087" level="INFO">Page title is 'All Sourcing Events - iSource Portal'.</msg>
-<arg>${title}</arg>
-<doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-06-04T12:00:30.531333" elapsed="0.068751"/>
-</kw>
-<arg>All Sourcing Events - iSource Portal</arg>
-<status status="PASS" start="2024-06-04T12:00:30.517650" elapsed="0.082434"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:20.792572" elapsed="9.809506"/>
-</test>
-<test id="s1-t3" name="Go To Created Event" line="22">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:30.608488" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/dew-listing/div[3]/dew-block/dew-block[1]/dew-row/dew-col[3]/dew-row[2]/dew-col/div/div/div/div/span'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/dew-listing/div[3]/dew-block/dew-block[1]/dew-row/dew-col[3]/dew-row[2]/dew-col/div/div/div/div/span</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:30.608488" elapsed="1.466560"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:00:32.075048" elapsed="0.018946"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:32.075048" elapsed="0.019943"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:00:37.100508" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:00:32.099978" elapsed="5.000530"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:30.607490" elapsed="6.493018"/>
-</test>
-<test id="s1-t4" name="Perform Analysis" line="27">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:37.100508" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/dew-spotlight/div/div[3]/div[2]/div/isource-section-tabs/dew-listing-nav-tabs/dew-tabset/div/div[1]/div/div/dew-paginator/div/div[1]/div/div/ul/li[4]/a'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/dew-spotlight/div/div[3]/div[2]/div/isource-section-tabs/dew-listing-nav-tabs/dew-tabset/div/div[1]/div/div/dew-paginator/div/div[1]/div/div/ul/li[4]/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:37.100508" elapsed="0.175237"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:00:42.276389" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:00:37.275745" elapsed="5.000644"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="analysis360"]/dew-section/div/dew-section-body/div/isource-analysis360-degree/dew-row/dew-col/dew-table/div/div/div/div/div/div/table/tbody/tr/td[7]/dew-actions-menu/div/div/div/span/div/span</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T12:00:42.276389" elapsed="0.036386"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:42.313780" level="INFO">Clicking element '//*[@id="analysis360"]/dew-section/div/dew-section-body/div/isource-analysis360-degree/dew-row/dew-col/dew-table/div/div/div/div/div/div/table/tbody/tr/td[7]/dew-actions-menu/div/div/div/span/div/span'.</msg>
-<arg>//*[@id="analysis360"]/dew-section/div/dew-section-body/div/isource-analysis360-degree/dew-row/dew-col/dew-table/div/div/div/div/div/div/table/tbody/tr/td[7]/dew-actions-menu/div/div/div/span/div/span</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:42.313780" elapsed="0.109039"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:00:42.422819" elapsed="0.013490"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:42.422819" elapsed="0.013490"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:00:47.438846" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:00:42.437306" elapsed="5.001540"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:47.438846" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-level/div/isource-event-level-supplier/dew-section/div/dew-section-body/isource-event-section-suppliers/dew-footer-actions/footer/div/dew-footer-action/dew-btn'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-level/div/isource-event-level-supplier/dew-section/div/dew-section-body/isource-event-section-suppliers/dew-footer-actions/footer/div/dew-footer-action/dew-btn</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:47.438846" elapsed="0.098837"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:00:52.543308" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:00:47.542414" elapsed="5.000894"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:00:52.543308" elapsed="0.004829"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:52.543308" elapsed="0.004829"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="stickytabs-errpanel-position"]/div/div/dew-paginator/div/div/div/div/ul/li[2]/a/div/dew-default-tab-head</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T12:00:52.549135" elapsed="0.032761"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:52.583893" level="INFO">Clicking element '//*[@id="stickytabs-errpanel-position"]/div/div/dew-paginator/div/div/div/div/ul/li[2]/a/div/dew-default-tab-head'.</msg>
-<arg>//*[@id="stickytabs-errpanel-position"]/div/div/dew-paginator/div/div/div/div/ul/li[2]/a/div/dew-default-tab-head</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:52.582896" elapsed="0.102532"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:00:57.688183" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:00:52.687978" elapsed="5.000205"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:00:57.688183" level="INFO">Clicking element '//*[@id="pricing"]/dew-section/div/dew-section-body/div/isource-pricing-analysis/dew-view-all/dew-listing/div[2]/dew-block/dew-block/dew-row/dew-col[7]/dew-row[2]/dew-col/div/div/a'.</msg>
-<arg>//*[@id="pricing"]/dew-section/div/dew-section-body/div/isource-pricing-analysis/dew-view-all/dew-listing/div[2]/dew-block/dew-block/dew-row/dew-col[7]/dew-row[2]/dew-col/div/div/a</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:00:57.688183" elapsed="0.113397"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:00:57.805088" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:57.805088" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:02.805564" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:00:57.805088" elapsed="5.000476"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:02.805564" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-pricing-senario/dew-page-content/dew-footer-actions/footer/div/dew-footer-action/dew-btn'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-pricing-senario/dew-page-content/dew-footer-actions/footer/div/dew-footer-action/dew-btn</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:02.805564" elapsed="0.098612"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:01:02.904176" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:01:02.904176" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:07.916352" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:02.916095" elapsed="5.000257"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:00:37.100508" elapsed="30.816350"/>
-</test>
-<test id="s1-t5" name="Awarding" line="52">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="analysis360"]/dew-section/div/dew-section-body/div/isource-analysis360-degree/dew-row/dew-col/dew-table/div/div/div/div/div/div/table/tbody/tr/td[7]/dew-actions-menu/div/div/div/span/div/span</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T12:01:07.916858" elapsed="0.082525"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:07.999383" level="INFO">Clicking element '//*[@id="analysis360"]/dew-section/div/dew-section-body/div/isource-analysis360-degree/dew-row/dew-col/dew-table/div/div/div/div/div/div/table/tbody/tr/td[7]/dew-actions-menu/div/div/div/span/div/span'.</msg>
-<arg>//*[@id="analysis360"]/dew-section/div/dew-section-body/div/isource-analysis360-degree/dew-row/dew-col/dew-table/div/div/div/div/div/div/table/tbody/tr/td[7]/dew-actions-menu/div/div/div/span/div/span</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:07.999383" elapsed="0.154366"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:01:08.153749" elapsed="0.010379"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:01:08.153749" elapsed="0.011381"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:13.167015" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:08.166122" elapsed="5.000893"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-level/div/isource-event-level-supplier/dew-section/div/dew-section-body/isource-event-section-suppliers/dew-block/dew-block/dew-row/dew-col[2]/dew-swiper/div/div[1]/div/div/div/div[1]/dew-row/dew-col[1]/dew-icon</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T12:01:13.167015" elapsed="0.028496"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:13.197808" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-level/div/isource-event-level-supplier/dew-section/div/dew-section-body/isource-event-section-suppliers/dew-block/dew-block/dew-row/dew-col[2]/dew-swiper/div/div[1]/div/div/div/div[1]/dew-row/dew-col[1]/dew-icon'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-level/div/isource-event-level-supplier/dew-section/div/dew-section-body/isource-event-section-suppliers/dew-block/dew-block/dew-row/dew-col[2]/dew-swiper/div/div[1]/div/div/div/div[1]/dew-row/dew-col[1]/dew-icon</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:13.196807" elapsed="0.082980"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:01:13.279787" elapsed="0.000000"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:01:13.279787" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:18.280434" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:13.279787" elapsed="5.000647"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:18.280434" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-level/div/isource-event-level-supplier/dew-section/div/dew-section-body/isource-event-section-suppliers/dew-footer-actions/footer/div/dew-flex-item/dew-footer-action/dew-btn'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-level/div/isource-event-level-supplier/dew-section/div/dew-section-body/isource-event-section-suppliers/dew-footer-actions/footer/div/dew-flex-item/dew-footer-action/dew-btn</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:18.280434" elapsed="0.106093"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:01:18.388521" elapsed="0.001995"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:01:18.387522" elapsed="0.002994"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:23.392277" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:18.391512" elapsed="5.000765"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-award-summary-form/dew-page-content/form/dew-anchor-tabs/dew-tabset/div/div[2]/div/dew-flex/div/div/dew-btn</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T12:01:23.392277" elapsed="0.027610"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:23.419887" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-award-summary-form/dew-page-content/form/dew-anchor-tabs/dew-tabset/div/div[2]/div/dew-flex/div/div/dew-btn'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-award-summary-form/dew-page-content/form/dew-anchor-tabs/dew-tabset/div/div[2]/div/dew-flex/div/div/dew-btn</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:23.419887" elapsed="0.099817"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:01:23.521700" elapsed="0.003774"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:01:23.521700" elapsed="0.003774"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:28.526658" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:23.525474" elapsed="5.001184"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-row/dew-col/dew-footer-actions/footer/div/dew-footer-action[1]/dew-btn</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T12:01:28.526658" elapsed="0.025626"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:28.552284" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-row/dew-col/dew-footer-actions/footer/div/dew-footer-action[1]/dew-btn'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-row/dew-col/dew-footer-actions/footer/div/dew-footer-action[1]/dew-btn</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:28.552284" elapsed="0.123560"/>
-</kw>
-<kw name="Wait Browser Load" owner="keywords">
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>30</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-06-04T12:01:28.732960" elapsed="0.004987"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:01:28.731962" elapsed="0.005985"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:33.741838" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:28.739942" elapsed="5.001896"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-modal/div[2]/div/div[2]/dew-modal-body/div/dew-input-container/textarea</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-06-04T12:01:33.741838" elapsed="0.027163"/>
+<status status="PASS" start="2024-06-04T20:01:29.852624" elapsed="0.021220"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:33.769001" level="INFO">Typing text 'Congratulations' into text field '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-modal/div[2]/div/div[2]/dew-modal-body/div/dew-input-container/textarea'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-modal/div[2]/div/div[2]/dew-modal-body/div/dew-input-container/textarea</arg>
-<arg>Congratulations</arg>
+<msg time="2024-06-04T20:01:29.875842" level="INFO">Typing text 'appsupport.zycustest297@sminvestments.com' into text field '//*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[1]/dew-input-container/div[2]/input'.</msg>
+<arg>//*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[1]/dew-input-container/div[2]/input</arg>
+<arg>appsupport.zycustest297@sminvestments.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:33.769001" elapsed="0.176895"/>
+<status status="PASS" start="2024-06-04T20:01:29.874841" elapsed="3.350621"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:38.948874" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:33.947900" elapsed="5.000974"/>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-04T20:01:33.237109" level="INFO">Typing password into text field '//*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[2]/dew-input-container/div[2]/input'.</msg>
+<msg time="2024-06-04T20:01:33.372916" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[2]/dew-input-container/div[2]/input</arg>
+<arg>Acc297@Sm123!</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T20:01:33.236111" elapsed="0.286931"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-04T12:01:38.948874" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-modal/div[2]/div/div[3]/dew-modal-footer/dew-btn/button/div/span'.</msg>
-<arg>//*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-event-workflows/dew-modal/div[2]/div/div[3]/dew-modal-footer/dew-btn/button/div/span</arg>
+<msg time="2024-06-04T20:01:33.537969" level="INFO">Clicking element '//*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/div[2]'.</msg>
+<arg>//*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/div[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-04T12:01:38.948874" elapsed="0.132012"/>
+<status status="PASS" start="2024-06-04T20:01:33.536968" elapsed="0.220539"/>
+</kw>
+<kw name="Wait Browser Load" owner="keywords">
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T20:01:33.767375" elapsed="0.010605"/>
+</kw>
+<status status="PASS" start="2024-06-04T20:01:33.765931" elapsed="0.012049"/>
+</kw>
+<status status="PASS" start="2024-06-04T20:01:13.135808" elapsed="20.650601"/>
+</test>
+<test id="s1-t2" name="Click Event" line="17">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-04T20:01:38.820046" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T20:01:33.819300" elapsed="5.000746"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-04T20:01:38.821633" level="INFO">Clicking element '//*[@id="cdk-drop-list-2"]/div[1]/dew-dashboard-card-body/zsp-add-cards/dew-card/dew-card-body/dew-row[1]/dew-col/div/a'.</msg>
+<arg>//*[@id="cdk-drop-list-2"]/div[1]/dew-dashboard-card-body/zsp-add-cards/dew-card/dew-card-body/dew-row[1]/dew-col/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-04T20:01:38.820631" elapsed="5.942169"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-06-04T20:01:44.778434" elapsed="0.111409"/>
+</kw>
+<kw name="Wait Browser Load" owner="keywords">
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>30</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-04T20:01:44.893832" elapsed="0.011975"/>
+</kw>
+<status status="PASS" start="2024-06-04T20:01:44.892838" elapsed="0.013960"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-06-04T12:01:49.081395" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-06-04T20:01:49.908251" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-04T20:01:44.906798" elapsed="5.001453"/>
+</kw>
+<status status="PASS" start="2024-06-04T20:01:33.812322" elapsed="16.095929"/>
+</test>
+<test id="s1-t3" name="Fill Out Event" line="24">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-04T20:02:11.467906" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF653151572+60802]
+	(No symbol) [0x00007FF6530CAC72]
+	(No symbol) [0x00007FF652F87CE4]
+	(No symbol) [0x00007FF652F5DFDF]
+	(No symbol) [0x00007FF653001E57]
+	(No symbol) [0x00007FF6530198D1]
+	(No symbol) [0x00007FF652FFA923]
+	(No symbol) [0x00007FF652FC8FEC]
+	(No symbol) [0x00007FF652FC9C21]
+	GetHandleVerifier [0x00007FF65345420D+3217949]
+	GetHandleVerifier [0x00007FF6534961A7+3488183]
+	GetHandleVerifier [0x00007FF65348F12F+3459391]
+	GetHandleVerifier [0x00007FF65320B936+823622]
+	(No symbol) [0x00007FF6530D600F]
+	(No symbol) [0x00007FF6530D0F34]
+	(No symbol) [0x00007FF6530D10C2]
+	(No symbol) [0x00007FF6530C1914]
+	BaseThreadInitThunk [0x00007FFCD7727344+20]
+	RtlUserThreadStart [0x00007FFCD8E626B1+33]
+</msg>
+<msg time="2024-06-04T20:02:11.467906" level="FAIL">Element '//*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-respose/div[1]/table/tbody/tr[1]/td[4]/dew-input-container/input' not visible after 5 seconds.</msg>
+<arg>//*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-respose/div[1]/table/tbody/tr[1]/td[4]/dew-input-container/input</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-04T20:01:49.908251" elapsed="21.577782">Element '//*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-respose/div[1]/table/tbody/tr[1]/td[4]/dew-input-container/input' not visible after 5 seconds.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-respose/div[1]/table/tbody/tr[1]/td[4]/dew-input-container/input</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T20:02:11.487642" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T20:02:11.488161" elapsed="0.000989"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-respose/div[1]/table/tbody/tr[1]/td[5]/dew-input-container/input</arg>
+<arg>50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T20:02:11.490148" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T20:02:11.491691" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-question/div/div/div/div/section/dew-input-container/dew-input2/textarea</arg>
+<arg>good</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T20:02:11.496274" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-04T20:02:11.498295" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//*[@id="app-root-container"]/div/div/div/div[2]/div/isource-quicksource-prepareresponse/dew-footer-actions/footer/div/div/div[2]/dew-btn[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-04T20:02:11.498295" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
 <arg>10</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-06-04T12:01:39.080886" elapsed="10.000509"/>
+<status status="NOT RUN" start="2024-06-04T20:02:11.498295" elapsed="0.000000"/>
 </kw>
-<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-04T12:01:49.082733" elapsed="4.437488"/>
-</kw>
-<status status="PASS" start="2024-06-04T12:01:07.916858" elapsed="45.603363"/>
+<status status="FAIL" start="2024-06-04T20:01:49.908251" elapsed="21.590044">Element '//*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-respose/div[1]/table/tbody/tr[1]/td[4]/dew-input-container/input' not visible after 5 seconds.</status>
 </test>
-<doc>Normal Sourcing Scenario</doc>
-<status status="PASS" start="2024-06-04T12:00:00.024515" elapsed="113.495706"/>
+<doc>Supplier submit response</doc>
+<status status="FAIL" start="2024-06-04T20:01:12.583987" elapsed="58.964873"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="5" fail="0" skip="0" id="s1" name="Analyze">Analyze</stat>
+<stat pass="2" fail="1" skip="0" id="s1" name="Supplier">Supplier</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-06-04T12:00:00.697342" level="ERROR">Error in file 'c:\Users\ojt.it.zycus\Documents\robotFramework\tests\analyze.robot' on line 4: Importing library '../resources/variables.resource' failed: ModuleNotFoundError: No module named '.'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
-  C:\Users\ojt.it.zycus\Documents\robotFramework
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\python312.zip
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\DLLs
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\Lib
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312
-  c:\Users\ojt.it.zycus\Documents\robotFramework\venv
-  c:\Users\ojt.it.zycus\Documents\robotFramework\venv\Lib\site-packages</msg>
-<msg time="2024-06-04T12:00:01.057598" level="ERROR">Error in file 'c:\Users\ojt.it.zycus\Documents\robotFramework\tests\analyze.robot' on line 6: Importing library '../keywords.resource' failed: ModuleNotFoundError: No module named '.'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
-  C:\Users\ojt.it.zycus\Documents\robotFramework
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\python312.zip
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\DLLs
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\Lib
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312
-  c:\Users\ojt.it.zycus\Documents\robotFramework\venv
-  c:\Users\ojt.it.zycus\Documents\robotFramework\venv\Lib\site-packages</msg>
-<msg time="2024-06-04T12:00:01.158435" level="ERROR">Error in file 'c:\Users\ojt.it.zycus\Documents\robotFramework\resources\normal-sourcing\normal-sourcing-keywords.resource' on line 3: Importing library 'c:\Users\ojt.it.zycus\Documents\robotFramework\venv\Lib\site-packages\robot\libraries\Dialogs.py' failed: ImportError: attempted relative import with no known parent package
-Traceback (most recent call last):
-  File "c:\Users\ojt.it.zycus\Documents\robotFramework\venv\Lib\site-packages\robot\libraries\Dialogs.py", line 31, in &lt;module&gt;
-    from .dialogs_py import (InputDialog, MessageDialog, MultipleSelectionDialog,
-PYTHONPATH:
-  c:\Users\ojt.it.zycus\Documents\robotFramework\venv\Lib\site-packages\robot\libraries
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_debug_adapter
-  C:\Users\ojt.it.zycus\Documents\robotFramework
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src
-  c:\Users\ojt.it.zycus\.vscode\extensions\robocorp.robotframework-lsp-1.12.0\src\robotframework_ls\vendored
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\python312.zip
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\DLLs
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312\Lib
-  C:\Users\ojt.it.zycus\AppData\Local\Programs\Python\Python312
-  c:\Users\ojt.it.zycus\Documents\robotFramework\venv
-  c:\Users\ojt.it.zycus\Documents\robotFramework\venv\Lib\site-packages</msg>
-<msg time="2024-06-04T12:00:01.186586" level="ERROR">Error in file 'c:\Users\ojt.it.zycus\Documents\robotFramework\resources\variables.resource' on line 16: Setting variable '${VRD HEAD EMAIL}' failed: Recursive variable definition.</msg>
-<msg time="2024-06-04T12:00:03.111708" level="WARN">The chromedriver version (124.0.6367.155) detected in PATH at C:\Users\ojt.it.zycus\Documents\robotFramework\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.141); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-06-04T20:01:13.135808" level="ERROR">Error in file 'c:\Users\ojt.it.zycus\Documents\robotFramework\resources\variables.resource' on line 17: Setting variable '${VRD HEAD EMAIL}' failed: Recursive variable definition.</msg>
+<msg time="2024-06-04T20:01:14.942210" level="WARN">The chromedriver version (124.0.6367.155) detected in PATH at C:\Users\ojt.it.zycus\Documents\robotFramework\chromedriver.exe might not be compatible with the detected chrome version (125.0.6422.141); currently, chromedriver 125.0.6422.141 is recommended for chrome 125.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-06-04T20:02:11.467906" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF653151572+60802]
+	(No symbol) [0x00007FF6530CAC72]
+	(No symbol) [0x00007FF652F87CE4]
+	(No symbol) [0x00007FF652F5DFDF]
+	(No symbol) [0x00007FF653001E57]
+	(No symbol) [0x00007FF6530198D1]
+	(No symbol) [0x00007FF652FFA923]
+	(No symbol) [0x00007FF652FC8FEC]
+	(No symbol) [0x00007FF652FC9C21]
+	GetHandleVerifier [0x00007FF65345420D+3217949]
+	GetHandleVerifier [0x00007FF6534961A7+3488183]
+	GetHandleVerifier [0x00007FF65348F12F+3459391]
+	GetHandleVerifier [0x00007FF65320B936+823622]
+	(No symbol) [0x00007FF6530D600F]
+	(No symbol) [0x00007FF6530D0F34]
+	(No symbol) [0x00007FF6530D10C2]
+	(No symbol) [0x00007FF6530C1914]
+	BaseThreadInitThunk [0x00007FFCD7727344+20]
+	RtlUserThreadStart [0x00007FFCD8E626B1+33]
+</msg>
 </errors>
 </robot>
