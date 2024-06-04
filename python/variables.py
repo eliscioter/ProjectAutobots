@@ -13,3 +13,6 @@ user2_password = os.environ.get("USER2PASS")
 
 user3_email = os.environ.get("USER3EMAIL")
 user3_password = os.environ.get("USER3PASS")
+
+vrd_head_email = os.environ.get("VRD_HEAD_EMAIL")
+vrd_head_password = os.environ.get("VRD_HEAD_PASS")

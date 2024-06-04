@@ -7,11 +7,11 @@ ${create_event_modal_xpath}     //*[@id="app-root-container"]/div/div/div/dew-ro
 # *Choices for Event type
 ${rfi}    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/isource-create-event/dew-modal/div[2]/div/div[3]/dew-modal-body/div/div/div/div/dew-row[2]/dew-col/dew-input-container/div[2]
 ${rfp}    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/isource-create-event/dew-modal/div[2]/div/div[3]/dew-modal-body/div/div/div/div/dew-row[2]/dew-col/dew-input-container/div[2]
-${rfq}    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/isource-create-event/dew-modal/div[2]/div/div[3]/dew-modal-body/div/div/div/div/dew-row[2]/dew-col/dew-input-container/div[2]
+${rfq}    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/isource-create-event/dew-modal/div[2]/div/div[3]/dew-modal-body/div/div/div/div/dew-row[2]/dew-col/dew-input-container/div[4]
 ${auction}    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/isource-create-event/dew-modal/div[2]/div/div[3]/dew-modal-body/div/div/div/div/dew-row[2]/dew-col/dew-input-container/div[2]
 
 # *To Chose Event Type
-${chosen_event_type}    ${rfi}
+${chosen_event_type}    ${rfq}
 
 ${create_submit_btn_xpath}    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-home/dew-page-wrapper/div/div/dew-page-content/isource-events-list/isource-create-event/dew-modal/div[2]/div/div[4]/dew-modal-footer/div/div[2]/dew-btn/button
 
