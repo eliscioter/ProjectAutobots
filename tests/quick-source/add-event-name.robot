@@ -55,23 +55,23 @@ Fill Out Item Details
 Fill Out Additional Details
     # Click Additional details tab
     Click Element    //*[@id="stickytabs-errpanel-position"]/div/div/dew-paginator/div/div[1]/div/div/ul/li[2]/a/div/dew-default-tab-head
-    Sleep    5
+    Sleep    3
     # Click group company container
     Wait Until Element Is Visible    //*[@id="DFSECTION_21_9_2020_12_12_0_803_nr4qmir8u"]/div[2]/dew-row/dew-col[1]/ffdew-dropdown/div/div/dew-input-container/div[2]
     Click Element    //*[@id="DFSECTION_21_9_2020_12_12_0_803_nr4qmir8u"]/div[2]/dew-row/dew-col[1]/ffdew-dropdown/div/div/dew-input-container/div[2]
-    Sleep    5
+    Sleep    3
     # Click sm retail from the dropdown
     Click Element    //*[@id="cdk-overlay-2"]/div/div/div[1]
     # Input SM Retail to group company
     # Wait Until Element Is Visible    id=flexiform_06oz2
     # Input Text    id=flexiform_06oz2    sm retail
-    Sleep    5
+    Sleep    3
     # Press Keys    None    ENTER
     Wait Browser Load
-    Sleep    5
+    Sleep    3
     # Click Business Unit container
     Click Element    //*[@id="DFSECTION_21_9_2020_12_12_0_803_nr4qmir8u"]/div[2]/dew-row/dew-col[2]/ffdew-dropdown/div/div/dew-input-container/div[2]
-    Sleep    5
+    Sleep    3
     # Click ace from the dropdown
     Click Element    //*[@id="cdk-overlay-3"]/div/div/div[2]
     # Input ace
@@ -139,7 +139,7 @@ Add Date
     # Click date container
     # Click Element    //*[@id="date_error"]/div
     # Sleep    5
-    Input Text    //*[@id="date_error"]/div/input    6/5/2024500
+    Input Text    //*[@id="date_error"]/div/input    6/6/2024500
 
 Attached Documents
     # ! For now, clicking the Attachments tab is done

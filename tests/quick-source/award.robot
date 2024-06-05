@@ -23,5 +23,21 @@ Go To Event
     Sleep    5
 
 Award Event
-    # Click got to responses
-    Click Element    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-view-quicksource-event/dew-page-content/dew-footer-actions/footer/div/div/div/dew-btn
+    # Click go to responses
+    Wait Until Element Is Visible    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-view-quicksource-event/dew-page-content/dew-footer-actions/footer/div/div/div/dew-btn[2]/button
+    Click Element    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-view-quicksource-event/dew-page-content/dew-footer-actions/footer/div/div/div/dew-btn[2]/button
+    Wait Browser Load
+    Sleep    5
+    # Click award button
+    Click Element    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-quick-source-view-responses/div/dew-footer-actions/footer/div/div/dew-row/dew-col[2]/div/dew-btn[2]
+    Sleep    5
+    # input textarea 1
+    Input Text    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-quick-source-view-responses/dew-modal/div[2]/div/div[2]/dew-modal-body/dew-row/dew-col/form/dew-col[1]/dew-input-container[1]/textarea    Good
+    Sleep    5
+    # input textarea 2
+    Input Text    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-quick-source-view-responses/dew-modal/div[2]/div/div[2]/dew-modal-body/dew-row/dew-col/form/dew-col[1]/dew-input-container[2]/textarea    Good
+    Sleep    5
+    Wait Until Element Is Enabled    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-quick-source-view-responses/dew-modal/div[2]/div/div[3]/dew-modal-footer/dew-btn
+    Click Element    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-quick-source-view-responses/dew-modal/div[2]/div/div[3]/dew-modal-footer/dew-btn
+    Sleep    10
+    [Teardown]    Close Browser
