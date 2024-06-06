@@ -41,4 +41,5 @@ Send For Approval
     Sleep    5
     # Click send
     Click Element    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/quicksource-workflow/dew-modal/div[2]/div/div[3]/dew-modal-footer/dew-btn
-    Sleep    10
+    Sleep    3
+    [Teardown]    Close Browser

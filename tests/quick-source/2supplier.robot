@@ -6,18 +6,20 @@ Resource    ../../resources/variables.resource
 
 *** Test Cases ***
 Valid Login
-    Open Browser    add proper link    Chrome
+    Open Browser    https://dewdrops-staging.zycus.com/zsp/guest    Chrome
     Set Screenshot Directory    ${QUICK_SOURCE_SCREENSHOT_PATH} 
     Wait Browser Load    
     # * Add credentials
-    Input Text    //*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[1]/dew-input-container/div[2]/input    email
-    Input Password    //*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[2]/dew-input-container/div[2]/input    pass
+    Input Text    //*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[1]/dew-input-container/div[2]/input    appsupport.zycustest297@sminvestments.com
+    Input Password    //*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/form/div[2]/dew-input-container/div[2]/input    Acc297@Sm123!
     Click Element    //*[@id="app-root-container"]/div/div/div/div[1]/zsp-guest/dew-row[1]/dew-col[1]/zsp-login/div/div[3]/div/div/div[2]
     Wait Browser Load
 
 Click Event
     Sleep    5
-    Click Element    //*[@id="cdk-drop-list-2"]/div[1]/dew-dashboard-card-body/zsp-add-cards/dew-card/dew-card-body/dew-row[1]/dew-col/div/a
+    Click Link    //*[@id="cdk-drop-list-1"]/div[1]/dew-dashboard-card-body/zsp-add-cards/dew-card/dew-card-body/dew-row[1]/dew-col/div/a
+    Sleep    5
+    Switch Window    title=Automated Quick Source1 - iSource Portal
     Wait Browser Load
     Sleep    5
 
