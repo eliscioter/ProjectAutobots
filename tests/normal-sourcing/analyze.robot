@@ -1,9 +1,8 @@
 *** Settings ***
 Documentation    Normal Sourcing Scenario
 Library          SeleniumLibrary
-Library          ../resources/variables.resource
-Library          ../python/select_dropdown.py
-Library           ../keywords.resource
+Library          ../../resources/variables.resource
+Resource           ../../resources/keywords.resource
 Resource         ../resources/keywords.resource
 Resource    ../resources/normal-sourcing/normal-sourcing-keywords.resource
 Resource    ../resources/normal-sourcing/normal-sourcing-variables.resource

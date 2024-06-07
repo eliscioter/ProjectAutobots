@@ -1,8 +1,7 @@
 *** Settings ***
 Documentation    Normal Sourcing Scenario
 Library          SeleniumLibrary
-Library          ../resources/variables.resource
-Library    ../python/select_dropdown.py
+Library          ../../resources/variables.resource
 Resource         ../resources/keywords.resource
 Resource    ../resources/normal-sourcing/normal-sourcing-keywords.resource
 Resource    ../resources/normal-sourcing/normal-sourcing-variables.resource
@@ -109,7 +108,7 @@ Create Questionares
     Sleep    5
     # *Success Modal
     # *Done button
-    Press Enter Key
+    Press Keys    None    ENTER
     Sleep    3
     Wait Browser Load
     Sleep    3

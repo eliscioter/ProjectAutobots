@@ -8,7 +8,7 @@ Resource    ../../resources/keywords.resource
 
 *** Test Cases ***
 Valid Login
-    Input Valid Login    ${QUICK_SOURCE_SCREENSHOT_PATH}    ${USER1}    ${USER1 PASS}
+    Input Valid Login    ${QUICK_SOURCE_SCREENSHOT_PATH}    ${USER2}    ${USER2 PASS}
 
 Go To Quick Source
     Click Hamburger Menu
@@ -28,10 +28,9 @@ Fill Out Item Details
     ${backspaces count}=    Get Length      ${value}
     Run Keyword If    """${value}""" != ''  
     ...     Repeat Keyword  ${backspaces count +1}  Press Key  //*[@id="primaryCurrencyInputContainer"]/input     \\08
-    # Clear Element Text    //*[@id="primaryCurrencyInputContainer"]/input
-    Sleep    1
+    Sleep    3
     # Input event name
-    Input Text    //*[@id="primaryCurrencyInputContainer"]/input    Automated Quick Source1
+    Input Text    //*[@id="primaryCurrencyInputContainer"]/input    Automated Quick Source9
     Sleep    1
     # Click test event
     Click Element    //*[@id="common_item_details"]/div/dew-section-body/dew-row[4]/dew-col[1]/dew-input-container/dew-row/dew-col/dew-checkbox
@@ -48,9 +47,6 @@ Fill Out Item Details
     # Input Current price
     Input Text    //*[@id="common_currentPrice_0"]    10
     Sleep    1
-    # Click + icon
-    # Click Element    //*[@id="common_item_details"]/div/dew-section-body/dew-list-view/dew-block/dew-block/dew-row[2]/dew-col[3]/div/dew-row/dew-col/div
-    # Sleep    5
 
 Fill Out Additional Details
     # Click Additional details tab
@@ -61,10 +57,8 @@ Fill Out Additional Details
     Click Element    //*[@id="DFSECTION_21_9_2020_12_12_0_803_nr4qmir8u"]/div[2]/dew-row/dew-col[1]/ffdew-dropdown/div/div/dew-input-container/div[2]
     Sleep    1
     # Click sm retail from the dropdown
-    Click Element    //*[@id="cdk-overlay-2"]/div/div/div[1]
     # Input SM Retail to group company
-    # Wait Until Element Is Visible    id=flexiform_06oz2
-    # Input Text    id=flexiform_06oz2    sm retail
+    Click Element    //*[@id="cdk-overlay-2"]/div/div/div[1]
     Sleep    1
     # Press Keys    None    ENTER
     Wait Browser Load
@@ -74,10 +68,6 @@ Fill Out Additional Details
     Sleep    1
     # Click ace from the dropdown
     Click Element    //*[@id="cdk-overlay-3"]/div/div/div[2]
-    # Input ace
-    # Input Text    xpath=//input[@id='flexiform_pgr6k']    ace
-    # Sleep    5
-    # Press Keys    None    ENTER
     Wait Browser Load
     Sleep    1
     # Click department container
@@ -85,10 +75,6 @@ Fill Out Additional Details
     Sleep    1
     # Click IT from the dropdown
     Click Element    //*[@id="cdk-overlay-4"]/div/div/div[3]
-    # Input manpower
-    # Input Text    xpath=//input[@id='flexiform_3ugif']    manpower
-    # Sleep    1
-    # Press Keys    None    ENTER
     Wait Browser Load
     Sleep    1
     # Click category container
@@ -96,10 +82,6 @@ Fill Out Additional Details
     Sleep    1
     # Click thread
     Click Element    //*[@id="cdk-overlay-5"]/div/div/div[4]
-    # Input thread
-    # Input Text   xpath=//input[@id='flexiform_i0x67']    thread
-    # Sleep    1
-    # Press Keys    None    ENTER
     Wait Browser Load
     Sleep    1
 
@@ -110,9 +92,6 @@ Add Questions
     # Input into first question
     Input Text    //*[@id="common_questions_0"]    How are you?
     Sleep    1
-    # Click + icon more added question
-    # Click Element    //*[@id="common_questions"]/div/dew-section-body/dew-input-container/dew-list-view/dew-block/dew-block/dew-row[2]/dew-col/div/dew-row/dew-col[3]/div
-    # Sleep    1
 
 Add Supplier
     # Click Add Suppliers tab
@@ -122,7 +101,7 @@ Add Supplier
     Click Element    //*[@id="add_supplier"]/dew-input-container/dew-row[1]/dew-col/dew-multi-select-supplier/dew-row/div[2]
     Sleep    5
     # Input test company10
-    Input Text    //*[@id="add_supplier"]/dew-input-container/dew-row[1]/dew-col/dew-multi-select-supplier/dew-row/div[2]/input    test company10
+    Input Text    //*[@id="add_supplier"]/dew-input-container/dew-row[1]/dew-col/dew-multi-select-supplier/dew-row/div[2]/input    test company9
     Sleep    5
     Press Keys    None    ENTER
     Sleep    1
@@ -137,12 +116,10 @@ Add Date
     Input Text    //*[@id="common_suppliers"]/div/dew-section-body/dew-input-container/dew-row[1]/dew-col/textarea    TBD
     Sleep    1
     # Click date container
-    # Click Element    //*[@id="date_error"]/div
-    # Sleep    1
-    Input Text    //*[@id="date_error"]/div/input    6/7/2024500
+    Input Text    //*[@id="date_error"]/div/input    6/7/2024903
 
 Attached Documents
-    # ! For now, clicking the Attachments tab is done
+    #! For now, clicking the Attachments tab is done
     Click Element    //*[@id="stickytabs-errpanel-position"]/div/div/dew-paginator/div/div[1]/div/div/ul/li[5]/a/div/dew-default-tab-head
     Sleep    1
 
@@ -167,6 +144,9 @@ Attached Documents
 Hit Send
     # Click the Send Button
     Click Element    //*[@id="app-root-container"]/div/div/div/dew-route-loader/div[2]/isource-quicksource-event-details/dew-page-wrapper/div/div/dew-page-content/isource-create/dew-page-content/form/dew-footer-actions/footer/div/div/div/dew-btn[2]
+    Wait Browser Load
     Sleep    1
+    [Teardown]    Close Browser
+
 
 

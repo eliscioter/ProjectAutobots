@@ -19,7 +19,7 @@ Click Event
     Sleep    5
     Click Link    //*[@id="cdk-drop-list-1"]/div[1]/dew-dashboard-card-body/zsp-add-cards/dew-card/dew-card-body/dew-row[1]/dew-col/div/a
     Sleep    5
-    Switch Window    title=Automated Quick Source1 - iSource Portal
+    Switch Window    title=Automated Quick Source9 - iSource Portal
     Wait Browser Load
     Sleep    5
 
@@ -32,4 +32,6 @@ Fill Out Event
     Input Text    //*[@id="response-container"]/dew-page-wrapper/div/div/dew-page-content/form/dew-card/dew-card-body/isource-qs-supplier-question/div/div/div/div/section/dew-input-container/dew-input2/textarea    good
     Sleep    5
     Click Element    //*[@id="app-root-container"]/div/div/div/div[2]/div/isource-quicksource-prepareresponse/dew-footer-actions/footer/div/div/div[2]/dew-btn[2]
-    Sleep    10
+    Sleep    3
+    [Teardown]    Close Browser
+
